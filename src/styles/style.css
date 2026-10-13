@@ -2856,7 +2856,7 @@ footer {
     color: #ffd76a;
     font-weight: 800;
     font-size: 15px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .cc-track {
@@ -2951,7 +2951,7 @@ footer {
     text-align: center;
     color: #8fa6c6;
     font-size: 12px;
-    margin-top: 8px;
+    margin: 8px 0;
 }
 
 /* ===== 🕹️ KIDS ARCADE — Money Match ===== */
@@ -2965,7 +2965,7 @@ footer {
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
     flex-wrap: wrap;
 }
 
@@ -3044,7 +3044,7 @@ footer {
 }
 
 .mm-win, .mm-hint {
-    margin-top: 14px;
+    margin: 14px 0 14px 0;
     text-align: center;
     color: #cfe0f5;
     background: rgba(16, 34, 71, 0.7);
@@ -3088,7 +3088,7 @@ footer {
     color: #ffd76a;
     font-weight: 800;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     flex-wrap: wrap;
     gap: 6px;
 }
@@ -3106,7 +3106,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 18px;
+    margin: 30px 0 35px 0;
 }
 
 .rr-vs {
@@ -3221,6 +3221,7 @@ footer {
 .rr-note {
     color: #8fa6c6;
     font-size: 12px;
+    margin: 8px 0;
 }
 
 /* mobile polish for arcade games */
