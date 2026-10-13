@@ -193,21 +193,21 @@ export default function EmojiBop() {
                     {!running && !over && (
                         <div className="cc-overlay">
                             <h2>😺 Emoji Bop</h2>
-                            <p>Je emoji hole mathi bahar aave tem tap karo!<br />😺  🐸  = +5 · 🦄 = +15 · 💣 👹 = 💥 life jay!</p>
-                            <p>5 combo sathe = +5 bonus 🔥 · Dar 50 points par +5 real coins</p>
+                            <p>Tap the emojis as they pop out of the holes!<br />Happy faces 😺 🐸 = +5 · Unicorn = +15 · Bomb 💣 👹 = 💥 you lose a life!</p>
+                            <p>5-combo streak = +5 bonus 🔥 · Every 50 points = +5 real coins</p>
                             <button className="cc-btn" onClick={startGame}>▶ START GAME</button>
                         </div>
                     )}
                     {over && (
                         <div className="cc-overlay">
                             <h2>🎉 Time's Up!</h2>
-                            <p>Tamaro score: <b>{score}</b> {score >= hs && score > 0 ? "🏆 NEW BEST!" : ""}</p>
+                            <p>Your score: <b>{score}</b> {score >= hs && score > 0 ? "🏆 NEW BEST!" : ""}</p>
                             <button className="cc-btn" onClick={startGame}>🔄 PLAY AGAIN</button>
                         </div>
                     )}
                 </div>
 
-                <div className="cc-touchhint">👆 Happy emojis tap karo — 💣 bomb mate touch mat karto! (Bonus ad every 1 min 🎁)</div>
+                <div className="cc-touchhint">👆 Tap the happy emojis — don't touch the 💣 bombs! (Bonus ad every 1 min 🎁)</div>
             </div>
         </PageShell>
     );

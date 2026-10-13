@@ -31,7 +31,7 @@ export default function RupeeRush() {
     const [score, setScore] = useState(0);
     const [streak, setStreak] = useState(0);
     const [best, setBest] = useState(() => Number(safeGetItem(RR_BEST_KEY, "0")) || 0);
-    const [msg, setMsg] = useState("🔼 Higher ka 🔽 Lower? Guess karo!");
+    const [msg, setMsg] = useState("🔼 Higher or 🔽 Lower? Make your guess!");
     const [busy, setBusy] = useState(false);
     const [over, setOver] = useState(false);
     const [shake, setShake] = useState(false);
@@ -52,7 +52,7 @@ export default function RupeeRush() {
                 const pts = isEq ? 5 : 2;
                 setStreak(ns);
                 setScore((s) => s + pts);
-                setMsg(isEq ? "🤝 Same card! Safe rahe — +5 bonus!" : `🎉 Sahi guess! +${pts} pts`);
+                setMsg(isEq ? "🤝 Same card! You're safe — +5 bonus!" : `🎉 Correct guess! +${pts} pts`);
                 // every 5 streak → real coins
                 if (ns % 5 === 0) {
                     addCoins(5);
@@ -66,7 +66,7 @@ export default function RupeeRush() {
             } else {
                 setOver(true);
                 setShake(true);
-                setMsg("😵 Galat! Game Over — restart karo!");
+                setMsg("😵 Wrong! Game Over — try again!");
                 setTimeout(() => setShake(false), 500);
                 if (score > best) {
                     setBest(score);
@@ -79,7 +79,7 @@ export default function RupeeRush() {
 
     function restart() {
         setCur(drawCard()); setNext(null); setScore(0); setStreak(0);
-        setOver(false); setMsg("🔼 Higher ka 🔽 Lower? Guess karo!");
+        setOver(false); setMsg("🔼 Higher or 🔽 Lower? Make your guess!");
     }
 
     // 👑 reward ad every 1 minute from the moment the game page is opened (auto-load, no popup)
@@ -138,7 +138,7 @@ export default function RupeeRush() {
                     <button className="rr-btn rr-up" onClick={restart}>🔄 PLAY AGAIN</button>
                 )}
 
-                <p className="rr-note">Card 1..13 ma aave — ₹value joi ne guess karo. Dar 5 streak par +5 real coins! 🪙</p>
+                <p className="rr-note">Cards range 1–13 — check the ₹ value and guess. Every 5-streak = +5 real coins! 🪙</p>
             </div>
         </PageShell>
     );

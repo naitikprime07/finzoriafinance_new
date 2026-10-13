@@ -226,21 +226,21 @@ export default function CoinCatch() {
                     {!running && !over && (
                         <div className="cc-overlay">
                             <h2>🪙 Coin Catch</h2>
-                            <p>Falling coins pakdo 🧺 ma!<br />💣 Bomb mate touch mat karto!</p>
-                            <p>💎 = 10 pts · 🪙 = 5 pts · Dar 50 pts ma +5 real coins</p>
+                            <p>Catch the falling coins in your basket 🧺!<br />💣 Don't touch the bombs!</p>
+                            <p>💎 = 10 pts · 🪙 = 5 pts · Every 50 pts = +5 real coins</p>
                             <button className="cc-btn" onClick={startGame}>▶ START GAME</button>
                         </div>
                     )}
                     {over && (
                         <div className="cc-overlay">
                             <h2>🎉 Game Over!</h2>
-                            <p>Tamaro score: <b>{score}</b> {score >= hs && score > 0 ? "🏆 NEW BEST!" : ""}</p>
+                            <p>Your score: <b>{score}</b> {score >= hs && score > 0 ? "🏆 NEW BEST!" : ""}</p>
                             <button className="cc-btn" onClick={startGame}>🔄 PLAY AGAIN</button>
                         </div>
                     )}
                 </div>
 
-                <div className="cc-touchhint">👆 Screen par drag karo ◀ ▶ (keyboard arrows pan chale)</div>
+                <div className="cc-touchhint">👆 Drag across the screen ◀ ▶ (keyboard arrows work too)</div>
             </div>
         </PageShell>
     );

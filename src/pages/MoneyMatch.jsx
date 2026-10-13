@@ -171,12 +171,12 @@ export default function MoneyMatch() {
 
                 {won && (
                     <div className="mm-win">
-                        🎉 Ne complete karitun! {moves} moves ma, {timerStr}
+                        🎉 Completed in {moves} moves · {timerStr}
                         <button className="mm-btn" onClick={() => reset()}>🔄 PLAY AGAIN</button>
                     </div>
                 )}
                 {!started && !won && (
-                    <div className="mm-hint">2 cards flopado ane same emoji jo joda milta ho to pair! Dar pair par +1 coin 🪙</div>
+                    <div className="mm-hint">Flip 2 cards — match the same emojis to make a pair! +1 coin per pair 🪙</div>
                 )}
             </div>
         </PageShell>

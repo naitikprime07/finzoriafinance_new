@@ -207,7 +207,7 @@ export default function GoldenScratch() {
                     {!revealed && <button className="cc-btn gs-peek" onClick={revealCard}>👀 REVEAL</button>}
                 </div>
 
-                <div className="cc-touchhint">👆 Finger/mouse thi silver coat scratch karo — 3 same symbols = coins! 🎁 Bonus ad every 1 min: +5 coins</div>
+                <div className="cc-touchhint">👆 Scratch the silver coating with your finger/mouse — 3 same symbols = coins! 🎁 Bonus ad every 1 min: +5 coins</div>
             </div>
         </PageShell>
     );

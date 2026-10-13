@@ -163,13 +163,13 @@ export default function SpinStop() {
                 {!started && (
                     <div className="cc-overlay sp-howto">
                         <h2>🎡 Spin & Stop</h2>
-                        <p>Wheel fast thato — je vaare gold ₹ segment pointer ne upar ave tem maate STOP dabavo!</p>
-                        <p>₹2 = +2 · ₹5 = +5 · ₹10 = +10 · ₹20 = JACKPOT 💣 = koi nahi</p>
+                        <p>The wheel speeds up — hit STOP when a gold ₹ segment lands under the pointer!</p>
+                        <p>₹2 = +2 · ₹5 = +5 · ₹10 = +10 · ₹20 = JACKPOT · 💣 = nothing</p>
                         <button className="cc-btn" onClick={spin}>▶ START SPINNING</button>
                     </div>
                 )}
 
-                <div className="cc-touchhint">👆 SPIN dabavo → wheel fast thay → STOP dabavi ne gold ₹ mate lakshya karo! (Dar 5 spin + reward ad 🎁)</div>
+                <div className="cc-touchhint">👆 Tap SPIN → the wheel speeds up → tap STOP to land on a gold ₹! (Reward ad every 5 spins 🎁)</div>
             </div>
         </PageShell>
     );
