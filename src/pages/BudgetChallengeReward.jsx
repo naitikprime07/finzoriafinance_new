@@ -62,6 +62,8 @@ export default function BudgetChallengeReward() {
         <PageShell>
             <PageHeader title="Budget Challenge" onBack={() => navigate("/budget-challenge-play")} />
 
+            <AdBanner bannerId="gpt-banner-budget-reward" placement="budget_challenge_reward" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/people-with-coins.png" className="rbximage" alt="Budget Result" />
@@ -87,8 +89,6 @@ export default function BudgetChallengeReward() {
                     </button>
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-budget-reward" placement="budget_challenge_reward" containerId="adsense-container" />
         </PageShell>
     );
 }

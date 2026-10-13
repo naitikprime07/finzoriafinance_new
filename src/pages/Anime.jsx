@@ -15,6 +15,8 @@ export default function Anime() {
         <PageShell>
             <PageHeader title="Select Anime" />
 
+            <AdBanner bannerId="gpt-banner-anime" placement="anime" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 {TOP.map((img) => (
                     <div className="animesec rewards" key={img}>
@@ -24,8 +26,6 @@ export default function Anime() {
                     </div>
                 ))}
             </div>
-
-            <AdBanner bannerId="gpt-banner-anime" placement="anime" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 {BOTTOM.map((img) => (

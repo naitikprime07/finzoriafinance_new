@@ -50,9 +50,9 @@ export default function Meme() {
         <PageShell>
             <PageHeader title="Memes For Fun" />
 
-            <div className="game_section" style={{ height: "auto" }}>{renderGroup(GROUP_TOP)}</div>
-
             <AdBanner bannerId="gpt-banner-meme" placement="meme" containerId="adsense-container" />
+
+            <div className="game_section" style={{ height: "auto" }}>{renderGroup(GROUP_TOP)}</div>
 
             <div className="game_section" style={{ height: "auto" }}>{renderGroup(GROUP_2)}</div>
             <div className="game_section" style={{ height: "auto" }}>{renderGroup(GROUP_3)}</div>

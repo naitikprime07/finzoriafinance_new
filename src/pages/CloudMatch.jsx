@@ -53,6 +53,8 @@ export default function CloudMatch() {
         <PageShell>
             <PageHeader title="Cloud Match Game" />
 
+            <AdBanner bannerId="gpt-banner-cloudmatch" placement="cloud_match" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/all_calimage.webp" className="rbximage" alt="Cloud Match" />
@@ -87,8 +89,6 @@ export default function CloudMatch() {
                     </div>
                 )}
             </div>
-
-            <AdBanner bannerId="gpt-banner-cloudmatch" placement="cloud_match" containerId="adsense-container" />
         </PageShell>
     );
 }

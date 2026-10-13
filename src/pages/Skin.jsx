@@ -14,6 +14,8 @@ export default function Skin() {
         <PageShell>
             <PageHeader title="Choose Your Favourite Skin :" />
 
+            <AdBanner bannerId="gpt-banner-skin" placement="skin" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">
                     {TOP.map((img) => (
@@ -21,8 +23,6 @@ export default function Skin() {
                     ))}
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-skin" placement="skin" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">

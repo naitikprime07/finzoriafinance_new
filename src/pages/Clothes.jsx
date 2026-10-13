@@ -14,6 +14,8 @@ export default function Clothes() {
         <PageShell>
             <PageHeader title="Select Clothes" />
 
+            <AdBanner bannerId="gpt-banner-clothes" placement="clothes" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">
                     {TOP.map((img) => (
@@ -21,8 +23,6 @@ export default function Clothes() {
                     ))}
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-clothes" placement="clothes" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">

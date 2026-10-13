@@ -25,6 +25,8 @@ export default function SipCalculator() {
         <PageShell>
             <PageHeader title="SIP Calculator" />
 
+            <AdBanner bannerId="gpt-banner-sip" placement="sip_calculator" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/sip-calc-icon.png" className="rbximage" alt="SIP Calculator" />
@@ -42,8 +44,6 @@ export default function SipCalculator() {
                 <div>If You invest every month, You will get :</div>
                 <div id="result" className="rbxresult">{result}</div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-sip" placement="sip_calculator" containerId="adsense-container" />
             <AboutSection />
         </PageShell>
     );

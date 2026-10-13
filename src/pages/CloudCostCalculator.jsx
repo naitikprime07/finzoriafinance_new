@@ -26,6 +26,8 @@ export default function CloudCostCalculator() {
         <PageShell>
             <PageHeader title="Cloud Cost Estimator" />
 
+            <AdBanner bannerId="gpt-banner-cloud" placement="cloud_cost" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/people-working-on-data-management-illustration-svg-download-png-12141642.png" className="rbximage" alt="Cloud Cost" />
@@ -44,8 +46,6 @@ export default function CloudCostCalculator() {
                 <div>Your estimated monthly cloud cost :</div>
                 <div id="result" className="rbxresult">{result}</div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-cloud" placement="cloud_cost" containerId="adsense-container" />
             <AboutSection />
         </PageShell>
     );

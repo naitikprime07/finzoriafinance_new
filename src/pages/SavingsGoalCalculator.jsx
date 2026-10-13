@@ -26,6 +26,8 @@ export default function SavingsGoalCalculator() {
         <PageShell>
             <PageHeader title="Savings Goal Planner" />
 
+            <AdBanner bannerId="gpt-banner-savings" placement="savings_goal" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/all_calimage.webp" className="rbximage" alt="Savings Goal" />
@@ -43,8 +45,6 @@ export default function SavingsGoalCalculator() {
                 <div>Your savings timeline :</div>
                 <div id="result" className="rbxresult">{result}</div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-savings" placement="savings_goal" containerId="adsense-container" />
             <AboutSection />
         </PageShell>
     );

@@ -15,9 +15,9 @@ export default function SkinActive() {
         <PageShell>
             <PageHeader title="Finzoria Skin" />
 
-            <img src="/assets/robux/favskin1.webp" alt="Rbux Skin" style={{ width: "70%" }} />
-
             <AdBanner bannerId="gpt-banner-skinactive" placement="skinactive" containerId="adsense-container" />
+
+            <img src="/assets/robux/favskin1.webp" alt="Rbux Skin" style={{ width: "70%" }} />
 
             <div className="contentButton">
                 <p className="countryP">This Roblox avatar features a stylish look with a black hoodie branded with

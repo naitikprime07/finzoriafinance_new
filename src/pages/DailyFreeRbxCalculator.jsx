@@ -13,6 +13,8 @@ export default function DailyFreeRbxCalculator() {
         <PageShell>
             <PageHeader title="Daily Free Savings Calculator" />
 
+            <AdBanner bannerId="gpt-banner-daily-free-rbx-cal" placement="daily_free_rbx_cal" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="rewards">
                     <SmartLink href="bc-rbx-counter.html">
@@ -20,8 +22,6 @@ export default function DailyFreeRbxCalculator() {
                     </SmartLink>
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-daily-free-rbx-cal" placement="daily_free_rbx_cal" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="rewards">

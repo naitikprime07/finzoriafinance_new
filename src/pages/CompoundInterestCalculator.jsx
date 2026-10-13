@@ -26,6 +26,8 @@ export default function CompoundInterestCalculator() {
         <PageShell>
             <PageHeader title="Compound Interest" />
 
+            <AdBanner bannerId="gpt-banner-ci" placement="compound_interest" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/all_calimage.webp" className="rbximage" alt="Compound Interest" />
@@ -49,8 +51,6 @@ export default function CompoundInterestCalculator() {
                 <div>After compounding, You will get :</div>
                 <div id="result" className="rbxresult">{result}</div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-ci" placement="compound_interest" containerId="adsense-container" />
             <AboutSection />
         </PageShell>
     );

@@ -25,6 +25,8 @@ export default function EmiCalculator() {
         <PageShell>
             <PageHeader title="EMI Calculator" />
 
+            <AdBanner bannerId="gpt-banner-emi" placement="emi_calculator" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/monthly-loan-payment.png" className="rbximage" alt="EMI Calculator" />
@@ -42,8 +44,6 @@ export default function EmiCalculator() {
                 <div>Your Loan EMI will be :</div>
                 <div id="result" className="rbxresult">{result}</div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-emi" placement="emi_calculator" containerId="adsense-container" />
             <AboutSection />
         </PageShell>
     );

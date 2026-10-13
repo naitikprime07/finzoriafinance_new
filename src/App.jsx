@@ -16,6 +16,12 @@ import BudgetChallengePlay from "./pages/BudgetChallengePlay.jsx";
 import BudgetChallengeReward from "./pages/BudgetChallengeReward.jsx";
 import FinanceTips from "./pages/FinanceTips.jsx";
 import CloudMatch from "./pages/CloudMatch.jsx";
+import CoinCatch from "./pages/CoinCatch.jsx";
+import MoneyMatch from "./pages/MoneyMatch.jsx";
+import RupeeRush from "./pages/RupeeRush.jsx";
+import SpinStop from "./pages/SpinStop.jsx";
+import GoldenScratch from "./pages/GoldenScratch.jsx";
+import EmojiBop from "./pages/EmojiBop.jsx";
 import Ads from "./services/ads.js";
 
 // All page routes (clean path + .html alias for backwards compat).
@@ -35,6 +41,12 @@ const PAGES = [
     ["/budget-challenge-reward", BudgetChallengeReward],
     ["/finance-tips", FinanceTips],
     ["/cloud-match", CloudMatch],
+    ["/coin-catch", CoinCatch],
+    ["/money-match", MoneyMatch],
+    ["/rupee-rush", RupeeRush],
+    ["/spin-stop", SpinStop],
+    ["/golden-scratch", GoldenScratch],
+    ["/emoji-bop", EmojiBop],
 ];
 
 export default function App() {

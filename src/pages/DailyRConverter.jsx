@@ -12,14 +12,14 @@ export default function DailyRConverter() {
         <PageShell>
             <PageHeader title="Daily Savings Converter" />
 
+            <AdBanner bannerId="gpt-banner-daily-r-converter" placement="daily_r_converter" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">
                     <GameCard href="daily-free-rbx-cal.html" img="/assets/robux/routine_image.webp" />
                     <GameCard href="rbx-dollar-cal.html" img="/assets/robux/dollar_image.webp" />
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-daily-r-converter" placement="daily_r_converter" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">

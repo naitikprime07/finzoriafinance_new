@@ -38,6 +38,8 @@ export default function FinanceTips() {
         <PageShell>
             <PageHeader title="Daily Finance Tips" />
 
+            <AdBanner bannerId="gpt-banner-tips" placement="finance_tips" containerId="adsense-container" />
+
             <div className="game_section" style={{ height: "auto" }}>
                 <div>
                     <img src="/assets/robux/all_calimage.webp" className="rbximage" alt="Finance Tips" />
@@ -63,8 +65,6 @@ export default function FinanceTips() {
                     </div>
                 </div>
             </div>
-
-            <AdBanner bannerId="gpt-banner-tips" placement="finance_tips" containerId="adsense-container" />
         </PageShell>
     );
 }
