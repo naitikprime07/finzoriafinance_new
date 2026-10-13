@@ -5,12 +5,12 @@ import GameCard from "../components/common/GameCard.jsx";
 import AboutSection from "../components/common/AboutSection.jsx";
 import usePageTitle from "../hooks/usePageTitle.js";
 
-// Daily R$ Converter hub (daily-r-converter.html): links to the calculators.
+// Daily R$ Converter hub (daily-r-converter.html): links to the finance calculators.
 export default function DailyRConverter() {
-    usePageTitle("Daily R$ Converter");
+    usePageTitle("Daily Savings Converter");
     return (
         <PageShell>
-            <PageHeader title="Daily R$ Converter" />
+            <PageHeader title="Daily Savings Converter" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="game_section1">

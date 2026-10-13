@@ -7,28 +7,29 @@ export default function AboutSection() {
     return (
         <div className="resp_about_section">
             <div className="about_section">
-                <h1>RBX Counter &amp; Fun Rewards – Your Ultimate Robux Calculator!</h1>
+                <h1>Finzoria Finance &amp; Cloud – Learn Money and Cloud the Fun Way!</h1>
 
                 <p>
-                    Count your daily free robux with our easy-to-use and powerful free robux
-                    counter, RBX calc and free robux converter.
+                    Calculate your daily savings, convert money into rewards, and learn the
+                    basics of personal finance and cloud computing with easy, fun tools.
                 </p>
 
                 <h1>Features</h1>
                 <ul>
-                    <li>RBX calculator</li>
-                    <li>Convert BC, TBC, and OBX to RBX instantly</li>
-                    <li>RBX to Dollar counter</li>
-                    <li>Spin &amp; Win – Try your luck and win surprises!</li>
-                    <li>Quiz Time – Test your RB knowledge and earn points</li>
-                    <li>Lucky Scratch – Scratch &amp; reveal exciting rewards.</li>
+                    <li>Finance &amp; RBX calculators and converters</li>
+                    <li>Daily savings and subscription planners</li>
+                    <li>Cloud computing and money quizzes</li>
+                    <li>Spin &amp; Win – Spin the wheel of financial wisdom</li>
+                    <li>Lucky Scratch – Scratch, reveal and learn</li>
+                    <li>Finance &amp; cloud memes to brighten your day</li>
                 </ul>
 
                 <h1>Important Information</h1>
                 <p>
-                    RBLX Calc : Robox Counters is an unofficial application and is not affiliated
-                    with ROBLOX CORPORATION. It is designed to help players and fans discover free
-                    items and is fully compliant with Roblox's community usage guidelines.
+                    Finzoria Finance is an unofficial educational app and is not affiliated with
+                    any bank, stock exchange or cloud service provider. The numbers shown here
+                    are simple estimates for learning and entertainment only and are not
+                    financial or investment advice.
                 </p>
 
                 <h1>Refer to</h1>
@@ -36,14 +37,14 @@ export default function AboutSection() {
                     The name, logo and information provided by the application used in accordance
                     with the guidelines indicated in:
                 </p>
-                <p>
+                {/* <p>
                     <SmartLink
                         href="https://en.help.roblox.com/hc/en-us/articles/115001708126-Roblox-Name-and-Logo-Community-Usage-Guidelines"
                         target="_blank"
                     >
                         https://en.help.roblox.com/hc/en-us/articles/115001708126-Roblox-Name-and-Logo-Community-Usage-Guidelines
                     </SmartLink>
-                </p>
+                </p> */}
                 <p>Thank you!</p>
             </div>
         </div>

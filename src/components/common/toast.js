@@ -17,11 +17,13 @@ function ensureToast(id, className, html) {
     return toast;
 }
 
-export function showToast() {
+export function showToast(customMsg) {
     const toast = ensureToast(
         "toast",
         "toast-message",
-        `<img src="/assets/icons/correct.png" alt="" style="width:20px;height:20px;margin-right:8px;">You've received 10 coins`
+        customMsg
+            ? `<img src="/assets/icons/correct.png" alt="" style="width:20px;height:20px;margin-right:8px;">${customMsg}`
+            : `<img src="/assets/icons/correct.png" alt="" style="width:20px;height:20px;margin-right:8px;">You've received 10 coins`
     );
     toast.classList.add("show");
     setTimeout(() => toast.classList.remove("show"), 5000);

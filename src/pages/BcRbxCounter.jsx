@@ -6,15 +6,15 @@ import usePageTitle from "../hooks/usePageTitle.js";
 import { bcCounter } from "../utils/calculations.js";
 
 export default function BcRbxCounter() {
-    usePageTitle("BC RBX Counter");
+    usePageTitle("Finance Reward Counter");
     return (
         <PageShell>
-            <PageHeader title="BC RBX Counter" />
+            <PageHeader title="Daily Reward Counter" />
             <SimpleCalculator
                 placeholder="Enter Number of Days"
                 alertMessage="Please enter a valid number of days"
                 compute={bcCounter}
-                resultLabel={<span>If You are a Builder club member<br />You will get :</span>}
+                resultLabel={<span>If You save every day at the Basic rate<br />You will get :</span>}
                 bannerId="gpt-banner-bc-rbx-counter"
                 bannerPlacement="bc_rbx_counter"
             />

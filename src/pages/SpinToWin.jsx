@@ -28,7 +28,7 @@ export default function SpinToWin() {
     const countRef = useRef(0);
     const resultValueRef = useRef(101);
 
-    const [finalText, setFinalText] = useState("Click On The Spin Button To Start");
+    const [finalText, setFinalText] = useState("Spin the Wheel of Financial Fortune!");
     const [spinning, setSpinning] = useState(false);
 
     useEffect(() => {

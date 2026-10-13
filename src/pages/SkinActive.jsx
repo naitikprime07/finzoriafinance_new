@@ -8,12 +8,12 @@ import usePageTitle from "../hooks/usePageTitle.js";
 // Skin active page (skinactive.html). "Activate" opens the congrats dialog; the OK button
 // is an `.earnCoinSection` link to home, so it runs the reward-ad branch first.
 export default function SkinActive() {
-    usePageTitle("Rbux Skin");
+    usePageTitle("Finzoria Finance Skin");
     const [dialogOpen, setDialogOpen] = useState(false);
 
     return (
         <PageShell>
-            <PageHeader title="Rbux Skin" />
+            <PageHeader title="Finzoria Skin" />
 
             <img src="/assets/robux/favskin1.webp" alt="Rbux Skin" style={{ width: "70%" }} />
 
@@ -38,7 +38,7 @@ export default function SkinActive() {
                 <div className="dialog-box">
                     <img src="/assets/robux/skiff_cong.webp" alt="Party Icon" className="dialog-icon" />
                     <h2>Congratulation</h2>
-                    <p className="countryP">Your Rbux Skin will be added to your Collections within 24 hours.</p>
+                    <p className="countryP">Your Finance Skin will be added to your Collections within 24 hours.</p>
                     <div className="earnCoinSection">
                         <SmartLink href="home.html">
                             <img src="/assets/robux/skiff_okbtn.png" className="dialog-button" alt="OK" />

@@ -8,10 +8,10 @@ import usePageTitle from "../hooks/usePageTitle.js";
 // Daily Free Rbx Calculator (daily-free-rbx-cal.html). Cards sit inside `.rewards`,
 // so each click runs the reward-ad branch before navigating to the counter page.
 export default function DailyFreeRbxCalculator() {
-    usePageTitle("Free Rbx Calculator");
+    usePageTitle("Free Savings Calculator");
     return (
         <PageShell>
-            <PageHeader title="Daily Free Rbx Calculator" />
+            <PageHeader title="Daily Free Savings Calculator" />
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="rewards">

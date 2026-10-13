@@ -5,14 +5,14 @@ import AboutSection from "../components/common/AboutSection.jsx";
 import SmartLink from "../components/common/SmartLink.jsx";
 import usePageTitle from "../hooks/usePageTitle.js";
 
-// Landing page (index.html): banner + a 2-question mini quiz + "Let's Start Now" + about text.
+// Landing page (index.html): banner + a 2-question mini quiz (finance + cloud) + "Let's Start Now" + about text.
 const MINI_QUIZ = [
-    { question: "What is the name of Roblox's virtual currency?", options: ["Robux", "Roblocks", "RoCoins", "RBucks"], answer: 0 },
-    { question: "What is a user-created Roblox game called?", options: ["Level", "Experience", "Session", "Map"], answer: 1 },
+    { question: "Which finance concept means earning returns on both the original amount and its accumulated returns?", options: ["Compound Interest", "Inflation", "Depreciation", "Tax"], answer: 0 },
+    { question: "In technology, what does 'cloud' refer to?", options: ["Weather forecasting", "Internet-based servers and storage", "A photo editing filter", "A type of computer mouse"], answer: 1 },
 ];
 
 export default function Index() {
-    usePageTitle("Rbux Counter");
+    usePageTitle("Finzoria Finance");
 
     const [qIndex, setQIndex] = useState(0);
     const [selected, setSelected] = useState(null);

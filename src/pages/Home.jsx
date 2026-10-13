@@ -3,24 +3,24 @@ import { useNavigate } from "react-router-dom";
 import PageShell from "../components/layout/PageShell.jsx";
 import PageHeader from "../components/layout/PageHeader.jsx";
 import AdBanner from "../components/common/AdBanner.jsx";
+import GameCard from "../components/common/GameCard.jsx";
 import SmartLink from "../components/common/SmartLink.jsx";
 import OopsPopup from "../components/feature/OopsPopup.jsx";
 import useCoins from "../hooks/useCoins.js";
 import usePageTitle from "../hooks/usePageTitle.js";
 import { showAdWithLogic, getAdLoading } from "../services/analytics.js";
 import { showToast, showErrorToast } from "../components/common/toast.js";
-import { toRoutePath } from "../utils/routes.js";
 
 const REWARD_CARDS = [
-    { img: "/assets/robux/todayclaim.webp", href: "clothes.html", alt: "Rbux Counter" },
-    { img: "/assets/robux/spinner.webp", href: "spin_to_win.html", alt: "Rbux Counter" },
-    { img: "/assets/robux/scrapper_main.webp", href: "scratch-win.html", alt: "Rbux Counter" },
-    { img: "/assets/robux/quiz_main.webp", href: "quiz.html", alt: "Quiz" },
-    { img: "/assets/robux/meme.webp", href: "meme.html", alt: "Rbux Counter" },
+    { img: "/assets/robux/Budget.png", href: "/budget-challenge", alt: "Budget Challenge" },
+    { img: "/assets/robux/spinner.webp", href: "/spin_to_win", alt: "Spin to Win" },
+    { img: "/assets/robux/scrapper_main.webp", href: "/scratch-win", alt: "Scratch Win" },
+    { img: "/assets/robux/quiz_main.webp", href: "/quiz", alt: "Finance Quiz" },
+    { img: "/assets/robux/meme.webp", href: "/meme", alt: "Finance Memes" },
 ];
 
 export default function Home() {
-    usePageTitle("Rbux Counter");
+    usePageTitle("Finzoria Finance");
     const navigate = useNavigate();
     const { coins, addCoins, setCoinsValue } = useCoins();
 
@@ -28,7 +28,6 @@ export default function Home() {
     const [oopsOpen, setOopsOpen] = useState(false);
     const [pendingGame, setPendingGame] = useState(null);
 
-    // Earn Free Coins: a rewarded ad grants +10 coins (original earnCoinBtn handler).
     function handleEarn() {
         if (earnLoading || getAdLoading()) return;
         setEarnLoading(true);
@@ -43,24 +42,22 @@ export default function Home() {
         });
     }
 
-    // Coin-gated game cards (original .earnCoin_section2): 10 coins to enter, else Oops popup.
     function handleCardClick(e, href) {
         e.preventDefault();
         e.stopPropagation();
         const required = 10;
-        const route = toRoutePath(href);
         if (coins < required) {
-            setPendingGame(route);
+            setPendingGame(href);
             setOopsOpen(true);
         } else {
             setCoinsValue(coins - required);
-            navigate(route);
+            navigate(href);
         }
     }
 
     return (
         <PageShell>
-            <PageHeader title="Get Rbux Counter" backClassName="home-back-button" />
+            <PageHeader title="Finzoria Finance & Cloud" backClassName="home-back-button" />
 
             <AdBanner bannerId="gpt-banner-home-top" placement="home_top" containerId="adsense-container" />
 
@@ -81,8 +78,8 @@ export default function Home() {
             </div>
 
             <div>
-                <SmartLink href="daily-r-converter.html">
-                    <img src="/assets/robux/routinecal_main.webp" className="homeimage" alt="Rbux Counter" />
+                <SmartLink href="/sip-calculator">
+                    <img src="/assets/robux/sip_banner.svg" className="homeimage" alt="SIP Calculator" />
                 </SmartLink>
             </div>
 
@@ -92,7 +89,7 @@ export default function Home() {
                 <div className="game_section1">
                     {REWARD_CARDS.map((card) => (
                         <div className="game_section2 rewards earnCoin_section2" key={card.href} onClick={(e) => handleCardClick(e, card.href)}>
-                            <a href={toRoutePath(card.href)} className="game_section3">
+                            <a href={card.href} className="game_section3">
                                 <div className="game_section4">
                                     <picture>
                                         <img src={card.img} alt={card.alt} loading="eager" className="game_section_img" />
@@ -106,13 +103,13 @@ export default function Home() {
 
             <div className="game_section" style={{ height: "auto" }}>
                 <div className="rewards">
-                    <SmartLink href="rbx-dollar-cal.html">
-                        <img src="/assets/robux/rd_main.webp" className="homeimage" alt="Rbux Counter" />
+                    <SmartLink href="/cloud-cost">
+                        <img src="/assets/robux/cloud_cost_banner.svg" className="homeimage" alt="Cloud Cost Calculator" />
                     </SmartLink>
                 </div>
                 <div className="rewards">
-                    <SmartLink href="dollar-rbx-cal.html">
-                        <img src="/assets/robux/dr_main.webp" className="homeimage" alt="Rbux Counter" />
+                    <SmartLink href="/emi-calculator">
+                        <img src="/assets/robux/emi_banner.svg" className="homeimage" alt="EMI Calculator" />
                     </SmartLink>
                 </div>
             </div>

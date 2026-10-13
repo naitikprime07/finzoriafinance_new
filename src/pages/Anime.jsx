@@ -10,7 +10,7 @@ const BOTTOM = ["anime3.png", "anime4.png", "anime5.png", "anime6.png", "anime7.
 // Anime selection grid (anime.html). Every card is inside `.rewards`, so clicks run the
 // reward-ad branch before navigating to the skin page.
 export default function Anime() {
-    usePageTitle("Rbux Counter : Anime");
+    usePageTitle("Finzoria Finance : Anime");
     return (
         <PageShell>
             <PageHeader title="Select Anime" />

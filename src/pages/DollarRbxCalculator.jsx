@@ -13,7 +13,7 @@ export default function DollarRbxCalculator() {
                 placeholder="Enter Dollar Amount"
                 alertMessage="Please enter the dollar amount"
                 compute={dollarToRbx}
-                resultLabel="Getting this much of Dollars will cost :"
+                resultLabel="With this much Dollars you can earn :"
                 bannerId="gpt-banner-dollar-rbx-cal"
                 bannerPlacement="dollar_rbx_cal"
             />

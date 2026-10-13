@@ -5,10 +5,10 @@ import PageHeader from "../components/layout/PageHeader.jsx";
 import AdBanner from "../components/common/AdBanner.jsx";
 import usePageTitle from "../hooks/usePageTitle.js";
 
-// Roblox Quiz (quiz.html): loads data/quizzes.json, list -> play -> result.
+// Finance & Cloud Quiz (quiz.html): loads data/quizzes.json, list -> play -> result.
 // All state transitions mirror the original classList toggles (hidden / active).
 export default function Quiz() {
-    usePageTitle("Roblox Quiz");
+    usePageTitle("Finance & Cloud Quiz");
     const navigate = useNavigate();
 
     const [quizzes, setQuizzes] = useState([]);

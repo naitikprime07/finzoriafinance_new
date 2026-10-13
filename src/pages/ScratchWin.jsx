@@ -97,7 +97,7 @@ export default function ScratchWin() {
             <AdBanner bannerId="gpt-banner-scratch-win" placement="scratch_win" containerId="adsense-container" />
 
             <div className="game_section" style={{ height: "auto" }}>
-                <h1 className="h1scratch">🎯 Scratch &amp; Win 🎯</h1>
+                <h1 className="h1scratch">🎯 Scratch &amp; Win a Reward 🎯</h1>
                 <div id="reward" className={revealed ? "" : "hidden"}>
                     <div className="reward-box">
                         <p>🎉 Congratulations! 🎉</p>

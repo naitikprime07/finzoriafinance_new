@@ -6,12 +6,31 @@
     text-decoration: none;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #020d1f;
+}
+
+#root {
+    min-height: 100vh;
+    background-color: #020d1f;
+}
+
+section {
+    display: block;
+    min-height: 100vh;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
 :root {
-    --text_color: #888;
+    --text_color: #a9bcd6;
+    --text-color: #a9bcd6;
+    --box-color: #0b2a52;
     --btn-rounded: 393px;
     --rounded: 15px;
     --border-color: #e5e7eb;
@@ -29,22 +48,18 @@ video {
 }
 
 main {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    background-image: url(/assets/icons/grid_Frame.svg);
-    background-color: black;
-    /* background-color: white; */
-    /* background-color: #fe980018; */
-    /* background-color: #000000d4; */
+    background-image: url(/assets/icons/wave_Frame.svg);
+    background-color: #020d1f;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 480px 273px;
     overflow-x: hidden;
-
 }
 
 /* .bg-top {
@@ -66,34 +81,34 @@ main {
 .main_div {
     max-width: 400px;
     margin: 3px;
-    text-wrap: nowrap;
     width: 100%;
-    height: 100%;
-    /* border-left: 1px solid #e5e7eb;
-    border-right: 1px solid #e5e7eb; */
+    min-height: 100vh;
     position: relative;
-    /* background-color: white; */
-    background-color: #0d0c11;
+    background-color: #051a38;
     color: var(--text_color);
-    /* overflow-y: scroll; */
-    /* padding: 12px 8px; */
     gap: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .fff_game_section {
     text-align: center;
     width: 100%;
+    max-width: 400px;
+    overflow-x: hidden;
+    padding: 0 4px;
 }
 
 .play_btn {
     background-color: transparent;
     margin: 16px 16px 0 16px;
     padding: 16px;
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 12px 22px -12px;
     border-radius: var(--rounded);
     border: 1px solid var(--border-color);
@@ -109,7 +124,7 @@ main {
 .click_btn {
     background-color: var(--btn_bg);
     margin-top: 15px;
-    padding: 10px 28px 10px 28px;
+    padding: 10px 28px;
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
@@ -118,6 +133,9 @@ main {
     box-shadow: var(--btn-boxShadow);
     border: none;
     -webkit-transition: all 0.3s ease-in-out;
+    text-wrap: wrap;
+    white-space: normal;
+    max-width: 100%;
 }
 
 .play-btn {
@@ -144,7 +162,8 @@ main {
 }
 
 .more_game {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
 }
 
 /* .click_btn_option {
@@ -168,7 +187,7 @@ main {
     justify-content: center;
     gap: 10px;
     width: 100%;
-
+    flex-wrap: wrap;
 }
 
 .cat_img {
@@ -180,7 +199,8 @@ main {
     margin: 16px 16px 0 16px;
     background-color: transparent;
     padding: 16px;
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     border-radius: var(--rounded);
     border: 1px solid var(--border-color);
     box-shadow: var(--div-boxShadow);
@@ -199,10 +219,10 @@ main {
 
 .game_section {
     margin: 16px 16px 0 16px;
-    /* border: 1px solid var(--border-color); */
     border-radius: var(--rounded);
-    /* padding: 20px; */
-
+    width: calc(100% - 32px);
+    max-width: 370px;
+    overflow: hidden;
 }
 
 .game_section1 {
@@ -211,13 +231,16 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
     justify-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .game_section2 {
     border-radius: 25px;
     background-color: transparent;
-    /* border: 1px solid #ebecf2; */
     box-shadow: var(--div-boxShadow);
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .game_section3 {
@@ -274,7 +297,7 @@ main {
 .game_section6 p {
     margin-bottom: 0px;
     text-align: start;
-    color: #000000;
+    color: #eaf2ff;
     text-transform: uppercase;
 }
 
@@ -323,7 +346,9 @@ main {
 
 .about_section {
     margin-top: 40px;
-    width: 316px;
+    width: 100%;
+    max-width: 370px;
+    overflow-wrap: break-word;
 }
 
 /* .about_section h1 {
@@ -335,14 +360,14 @@ main {
     margin: 10px 0 10px 0;
     text-wrap: wrap;
     text-align: left;
-    color: var(--text-color);
+    color: #dbe7f7;
     font-size: 22px;
 }
 
 .about_section p {
     text-wrap: wrap;
     text-align: start;
-    color: #888;
+    color: #a9bcd6;
     font-size: 16px;
 }
 
@@ -350,22 +375,22 @@ main {
     padding-left: 10px;
     text-wrap: wrap;
     text-align: left;
-    color: #888;
+    color: #a9bcd6;
     font-size: 16px;
 }
 
 footer {
     display: flex;
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     justify-content: space-between;
     align-items: center;
     padding: 7px 0px;
     color: white !important;
-    /* width: 100%; */
 }
 
 .anchor_text {
-    color: black;
+    color: #dbe7f7;
 }
 
 .anchor_text:hover {
@@ -397,7 +422,8 @@ footer {
     color: #fff;
     border-radius: 5px;
     margin: 0 auto;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     padding: 10px;
     position: absolute;
     pointer-events: auto;
@@ -629,7 +655,8 @@ footer {
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -784,15 +811,18 @@ footer {
 
 .input-field {
     width: 100%;
+    max-width: 100%;
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    font-size: 14px;
 }
 
 .continue-btn {
     width: 100%;
+    max-width: 100%;
     background-color: #ff7f00;
     color: white;
     border: none;
@@ -802,15 +832,16 @@ footer {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 #rbxbuilder {
     display: none;
-    /* initially hidden */
     padding: 20px;
-    /* background: lightblue;
-    border: 1px solid #333; */
     color: #ffffff;
+    width: 100%;
+    max-width: 370px;
+    overflow-wrap: break-word;
 }
 
 .rbxresult {
@@ -818,6 +849,9 @@ footer {
     color: #ff7f00;
     font-weight: bold;
     font-size: 25px;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .animesec {
@@ -825,7 +859,7 @@ footer {
 }
 
 .meme-card {
-    background: #1e1e1e;
+    background: #0c2c55;
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 15px;
@@ -885,11 +919,11 @@ footer {
     margin: 12px 16px 0 16px;
     background-color: var(--box-color);
     padding: 16px;
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     border-radius: var(--rounded);
-    /* border: 1px solid var(--border-color); */
     border: 1px solid #e5e7eb9c;
-    /* box-shadow: var(--div-boxShadow); */
+    background-color: #0b2a52;
 }
 
 .redeem-coin {
@@ -1077,7 +1111,7 @@ footer {
 }
 
 .popup-data {
-    background: #262626;
+    background: #0b2a52;
     padding: 20px 20px 20px;
     border-radius: 15px;
     text-align: center;
@@ -1489,7 +1523,7 @@ footer {
 }
 
 .quiz-card {
-    background: #1e1e1e;
+    background: #0c2c55;
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 15px;
@@ -1570,7 +1604,7 @@ footer {
 .quiz-progress-bar {
     width: 100%;
     height: 8px;
-    background: #1e1e1e;
+    background: #0c2c55;
     border-radius: 999px;
     overflow: hidden;
     margin-bottom: 8px;
@@ -1592,7 +1626,7 @@ footer {
 }
 
 .quiz-question-card {
-    background: #1e1e1e;
+    background: #0c2c55;
     border-radius: 14px;
     padding: 18px;
     text-align: center;
@@ -1613,7 +1647,7 @@ footer {
 }
 
 .quiz-option {
-    background: #2a2a2e;
+    background: #123561;
     color: #eee;
     border: 1.5px solid transparent;
     border-radius: 10px;
@@ -1713,7 +1747,7 @@ footer {
 }
 
 .quiz-back-btn {
-    background-color: #2a2a2e;
+    background-color: #123561;
     color: #eee;
 }
 
@@ -1924,3 +1958,26 @@ footer {
     border-color: rgba(255, 255, 255, 0.35);
     background: rgba(255, 255, 255, 0.06);
 }
+
+/* =========================================
+   FINANCE & CLOUD TOOLS — UTILITY STYLES
+========================================= */
+
+.section-heading {
+    color: #dbe7f7;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 16px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.game-card-label {
+    color: #a9bcd6;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 0;
+}
+

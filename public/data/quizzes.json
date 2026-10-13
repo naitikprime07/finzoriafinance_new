@@ -2,185 +2,185 @@
     "quizzes": [
         {
             "id": "roblox-basics",
-            "title": "Roblox Basics",
-            "description": "How well do you know the fundamentals of Roblox?",
+            "title": "Personal Finance Basics",
+            "description": "How well do you know the fundamentals of money management?",
             "icon": "assets/robux/quiz_cup.webp",
             "questions": [
                 {
-                    "question": "What is the name of Roblox's virtual currency?",
-                    "options": ["Robux", "Roblocks", "RoCoins", "RBucks"],
+                    "question": "Which finance concept means earning returns on both the original amount and its accumulated returns?",
+                    "options": ["Compound Interest", "Inflation", "Depreciation", "Tax"],
                     "answer": 0
                 },
                 {
-                    "question": "What is a user-created Roblox game called?",
-                    "options": ["Level", "Experience", "Session", "Map"],
+                    "question": "In technology, what does 'cloud' refer to?",
+                    "options": ["Weather forecasting", "Internet-based servers and storage", "A photo editing filter", "A type of computer mouse"],
                     "answer": 1
                 },
                 {
-                    "question": "Which company owns Roblox?",
-                    "options": ["Epic Games", "Roblox Corporation", "Mojang", "Unity Technologies"],
-                    "answer": 1
-                },
-                {
-                    "question": "What is the default avatar body type called?",
-                    "options": ["Classic", "Rthro", "Dynamic Head", "Woodcut"],
+                    "question": "What is a common rule of thumb for the size of an emergency fund?",
+                    "options": ["3-6 months of expenses", "One day of income", "10 years of salary", "Your monthly rent only"],
                     "answer": 0
                 },
                 {
-                    "question": "What programming language is used to script Roblox games?",
-                    "options": ["Python", "Java", "Lua", "C++"],
-                    "answer": 2
+                    "question": "What is the definition of a budget?",
+                    "options": ["A type of bank locker", "A plan for how you earn, spend and save money", "A credit card brand", "A government tax"],
+                    "answer": 1
                 },
                 {
-                    "question": "What is the Roblox game creation tool called?",
-                    "options": ["Roblox Maker", "Roblox Studio", "Roblox Builder", "Roblox Engine"],
-                    "answer": 1
+                    "question": "In the 50/30/20 budgeting rule, what does the 20% represent?",
+                    "options": ["Saving and investing", "Wants and entertainment", "Rent only", "Groceries"],
+                    "answer": 0
+                },
+                {
+                    "question": "In finance, what is 'capital'?",
+                    "options": ["The money or assets used to generate wealth", "A type of insurance", "A bank holiday", "A monthly bill"],
+                    "answer": 0
                 }
             ]
         },
         {
             "id": "robux-currency",
-            "title": "Robux & Currency",
-            "description": "Test your knowledge about Robux, pricing and spending.",
+            "title": "Money & Payments",
+            "description": "Test your knowledge about accounts, cards and digital payments.",
             "icon": "assets/robux/quiz_cup.webp",
             "questions": [
                 {
-                    "question": "How can you legitimately earn Robux?",
-                    "options": ["Selling items on the marketplace", "Third-party generator sites", "Sharing your password", "Editing game files"],
+                    "question": "What does APY stand for in banking?",
+                    "options": ["Annual Percentage Yield", "All Payment Years", "Auto Pay Yield", "Annual Price Index"],
                     "answer": 0
                 },
                 {
-                    "question": "What is a Roblox subscription that grants a monthly Robux stipend called?",
-                    "options": ["Roblox Plus", "Roblox Premium", "Roblox Gold", "Roblox VIP"],
-                    "answer": 1
-                },
-                {
-                    "question": "What percentage cut does Roblox typically take from marketplace sales?",
-                    "options": ["A small cut", "None, sellers keep 100%", "A large majority cut", "It's random each time"],
-                    "answer": 2
-                },
-                {
-                    "question": "What can Robux be used for?",
-                    "options": ["Buying avatar items and game passes", "Changing your username for free", "Unlocking Wi-Fi", "Deleting other players' games"],
+                    "question": "Which of these is a digital payment method?",
+                    "options": ["UPI", "Typewriter", "Paper kite", "Newspaper coupon"],
                     "answer": 0
                 },
                 {
-                    "question": "What should you do if a site promises 'free unlimited Robux'?",
-                    "options": ["Enter your password immediately", "Avoid it, it's likely a scam", "Share it with friends first", "Give them your email and birthday"],
-                    "answer": 1
+                    "question": "What is a savings account mainly used for?",
+                    "options": ["Storing money safely while earning interest", "Daily trading in stocks", "Getting loans instantly", "Playing games"],
+                    "answer": 0
                 },
                 {
-                    "question": "Where can you safely purchase Robux?",
-                    "options": ["Only from the official Roblox website or app", "Random Discord links", "Any website that shows a Robux logo", "Comments under YouTube videos"],
+                    "question": "What does 'KYC' mean in financial services?",
+                    "options": ["Know Your Customer", "Keep Your Cash", "Key Yield Calculation", "Kiosk Payment Code"],
+                    "answer": 0
+                },
+                {
+                    "question": "What is the main risk of only keeping cash at home long-term?",
+                    "options": ["Losing value due to inflation", "Earning high interest", "Getting tax refunds", "Increasing your salary"],
+                    "answer": 0
+                },
+                {
+                    "question": "What is the full form of EMI?",
+                    "options": ["Equated Monthly Installment", "Easy Money Income", "Extra Monthly Interest", "Electronic Money Index"],
                     "answer": 0
                 }
             ]
         },
         {
             "id": "popular-games",
-            "title": "Popular Roblox Games",
-            "description": "Do you know your way around the most popular experiences?",
+            "title": "Cloud Computing Basics",
+            "description": "Do you know your way around cloud services and models?",
             "icon": "assets/robux/quiz_cup.webp",
             "questions": [
                 {
-                    "question": "Which game involves guessing what other players are drawing?",
-                    "options": ["Adopt Me!", "Blox Fruits", "Guess the Build", "Brookhaven"],
-                    "answer": 2
-                },
-                {
-                    "question": "Which Roblox game is themed around raising and trading pets?",
-                    "options": ["Adopt Me!", "Tower of Hell", "Arsenal", "Bloxburg"],
+                    "question": "What does 'SaaS' stand for?",
+                    "options": ["Software as a Service", "Server and Storage", "Secure App Access", "System Admin Service"],
                     "answer": 0
                 },
                 {
-                    "question": "Which game is a fast-paced obstacle course focused on climbing towers?",
-                    "options": ["Murder Mystery 2", "Tower of Hell", "Piggy", "Jailbreak"],
-                    "answer": 1
-                },
-                {
-                    "question": "Which game lets you roam a city as a cop or a robber?",
-                    "options": ["Jailbreak", "Blox Fruits", "Royale High", "Natural Disaster Survival"],
+                    "question": "Which of these is a major cloud service provider?",
+                    "options": ["Amazon Web Services", "Windows Notepad", "Google Docs offline only", "A USB drive"],
                     "answer": 0
                 },
                 {
-                    "question": "Which game features a roleplay town with jobs and houses?",
-                    "options": ["Arsenal", "Brookhaven RP", "Piggy", "MeepCity"],
-                    "answer": 1
+                    "question": "In the cloud, what does 'scalability' mean?",
+                    "options": ["Increasing or decreasing resources on demand", "Deleting all data weekly", "Painting the server room", "Slower internet speed"],
+                    "answer": 0
                 },
                 {
-                    "question": "Which game is an anime-inspired fighting and pirate adventure game?",
-                    "options": ["Blox Fruits", "Royale High", "Adopt Me!", "Work at a Pizza Place"],
+                    "question": "Which cloud model gives you raw virtual machines and networking?",
+                    "options": ["IaaS", "SaaS", "PaaS", "DaaS"],
+                    "answer": 0
+                },
+                {
+                    "question": "Storing files in the cloud means they are…",
+                    "options": ["Hosted on remote servers accessible via the internet", "Saved only on one device", "Printed in a book", "Hidden in your SIM card"],
+                    "answer": 0
+                },
+                {
+                    "question": "What is a 'data center' in cloud computing?",
+                    "options": ["A facility that houses servers and cloud infrastructure", "A type of laptop brand", "A mobile game", "An email service"],
                     "answer": 0
                 }
             ]
         },
         {
             "id": "roblox-history",
-            "title": "Roblox History & Facts",
-            "description": "Interesting trivia from Roblox's journey over the years.",
+            "title": "Investing & Growth",
+            "description": "Interesting facts about investing, SIPs and risk.",
             "icon": "assets/robux/quiz_cup.webp",
             "questions": [
                 {
-                    "question": "In what year was Roblox originally released?",
-                    "options": ["2004", "2006", "2010", "2013"],
-                    "answer": 1
-                },
-                {
-                    "question": "Who co-founded Roblox alongside Erik Cassel?",
-                    "options": ["David Baszucki", "Markus Persson", "Gabe Newell", "Tim Sweeney"],
+                    "question": "What is a SIP in investing?",
+                    "options": ["Systematic Investment Plan", "Standard Income Paper", "Secure Instant Payment", "Stock Interest Policy"],
                     "answer": 0
                 },
                 {
-                    "question": "What was Roblox's original name during early development?",
-                    "options": ["DynaBlocks", "BlockWorld", "CubeCraft", "PlayForge"],
+                    "question": "Which generally carries higher risk but also higher return potential?",
+                    "options": ["Equities (stocks)", "Fixed deposits", "Savings account", "Government small savings"],
                     "answer": 0
                 },
                 {
-                    "question": "In what year did Roblox go public on the stock market?",
-                    "options": ["2018", "2019", "2020", "2021"],
-                    "answer": 3
+                    "question": "What is 'diversification' in investing?",
+                    "options": ["Spreading money across different assets to reduce risk", "Buying only one stock", "Keeping cash in a locker", "Selling everything at once"],
+                    "answer": 0
                 },
                 {
-                    "question": "What is Roblox's annual community event that awards top creators called?",
-                    "options": ["Bloxy Awards", "RoblCon", "Studio Summit", "CreatorFest"],
+                    "question": "What does 'market cap' mean?",
+                    "options": ["The total value of a company's shares", "A cap sold at the market", "The bank's deposit limit", "A type of tax slab"],
+                    "answer": 0
+                },
+                {
+                    "question": "What is a bond?",
+                    "options": ["A loan you give to a government or company that pays interest", "A type of share that never changes", "A credit card", "A gold ornament"],
                     "answer": 0
                 }
             ]
         },
         {
             "id": "safety-tips",
-            "title": "Roblox Safety & Tips",
-            "description": "Stay safe and play smart with these essential tips.",
+            "title": "Cloud Security & Safety",
+            "description": "Stay safe online and protect your money and data.",
             "icon": "assets/robux/quiz_cup.webp",
             "questions": [
                 {
-                    "question": "What should you never share with strangers online?",
-                    "options": ["Your password and personal info", "Your favorite game genre", "Your username", "Your avatar's outfit"],
+                    "question": "What security feature adds an extra layer of protection to your accounts?",
+                    "options": ["Two-factor authentication (2FA)", "Auto-login", "Guest Mode", "Public Profile"],
                     "answer": 0
                 },
                 {
-                    "question": "What security feature adds an extra layer of protection to your account?",
-                    "options": ["Two-Step Verification", "Auto-login", "Guest Mode", "Public Profile"],
+                    "question": "What should you never share with anyone?",
+                    "options": ["Your password and OTP", "Your favorite game genre", "Your username", "Your city name"],
                     "answer": 0
                 },
                 {
-                    "question": "What should you do if another player is being abusive in chat?",
-                    "options": ["Report and block them", "Reply with insults", "Give them your account details", "Ignore Roblox's rules"],
+                    "question": "What is 'phishing'?",
+                    "options": ["Fake messages or links that steal your login details", "A fishing game", "A type of bank offer", "A cloud backup tool"],
                     "answer": 0
                 },
                 {
-                    "question": "Why should you avoid clicking links promising free Robux?",
-                    "options": ["They are usually scams or phishing attempts", "They always work instantly", "They are made by Roblox staff", "They give double rewards"],
+                    "question": "Which is the safest practice for cloud storage of sensitive data?",
+                    "options": ["Enable encryption and strong access control", "Share your password in a group chat", "Use 'password123' as password", "Keep everyone as admin"],
                     "answer": 0
                 },
                 {
-                    "question": "What setting can parents use to manage what a child sees on Roblox?",
-                    "options": ["Parental Controls", "Guest Access", "Trade Lock", "Studio Mode"],
+                    "question": "If someone promises 'double return on your money in one day', it is most likely…",
+                    "options": ["A scam", "A guaranteed scheme", "A bank offer", "A tax refund"],
                     "answer": 0
                 },
                 {
-                    "question": "What should you check before trusting a trade offer?",
-                    "options": ["That it's fair and from a legitimate account", "Nothing, all trades are safe", "Only the item's color", "The other player's avatar outfit"],
+                    "question": "What should you check before trusting a payment link?",
+                    "options": ["That the website is genuine and secure", "Nothing, all links are safe", "Only the page color", "The sender's emoji"],
                     "answer": 0
                 }
             ]
