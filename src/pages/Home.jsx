@@ -20,7 +20,7 @@ const REWARD_CARDS = [
 ];
 
 export default function Home() {
-    usePageTitle("Finzoria Finance");
+    usePageTitle("FF Skin Tool");
     const navigate = useNavigate();
     const { coins, addCoins, setCoinsValue } = useCoins();
 
@@ -57,7 +57,7 @@ export default function Home() {
 
     return (
         <PageShell>
-            <PageHeader title="Finzoria Finance & Cloud" backClassName="home-back-button" />
+            <PageHeader title="FF Skin Tool" backClassName="home-back-button" />
 
             <AdBanner bannerId="gpt-banner-home-top" placement="home_top" containerId="adsense-container" />
 

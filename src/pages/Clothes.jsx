@@ -9,7 +9,7 @@ const BOTTOM = ["boytshirt.png", "hoodie.png", "shortcoat.png", "longcoat.png"];
 
 // Clothes selection grid (clothes.html). All cards link to the anime page.
 export default function Clothes() {
-    usePageTitle("Finzoria Finance: Rewards");
+    usePageTitle("FF Skin Tool: Rewards");
     return (
         <PageShell>
             <PageHeader title="Select Clothes" />

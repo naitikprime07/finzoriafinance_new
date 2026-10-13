@@ -35,7 +35,7 @@ function buildDeck(pairs) {
 }
 
 export default function MoneyMatch() {
-    usePageTitle("Money Match 🃏 | Finzoria");
+    usePageTitle("Money Match 🃏 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [level, setLevel] = useState("easy");

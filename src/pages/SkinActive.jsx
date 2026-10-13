@@ -8,12 +8,12 @@ import usePageTitle from "../hooks/usePageTitle.js";
 // Skin active page (skinactive.html). "Activate" opens the congrats dialog; the OK button
 // is an `.earnCoinSection` link to home, so it runs the reward-ad branch first.
 export default function SkinActive() {
-    usePageTitle("Finzoria Finance Skin");
+    usePageTitle("FF Skin Tool");
     const [dialogOpen, setDialogOpen] = useState(false);
 
     return (
         <PageShell>
-            <PageHeader title="Finzoria Skin" />
+            <PageHeader title="FF Skin Tool" />
 
             <AdBanner bannerId="gpt-banner-skinactive" placement="skinactive" containerId="adsense-container" />
 

@@ -7,7 +7,7 @@ export default function AboutSection() {
     return (
         <div className="resp_about_section">
             <div className="about_section">
-                <h1>Finzoria Finance &amp; Cloud – Learn Money and Cloud the Fun Way!</h1>
+                <h1>FF Skin Tool – Learn Money and Cloud the Fun Way!</h1>
 
                 <p>
                     Calculate your daily savings, convert money into rewards, and learn the
@@ -26,7 +26,7 @@ export default function AboutSection() {
 
                 <h1>Important Information</h1>
                 <p>
-                    Finzoria Finance is an unofficial educational app and is not affiliated with
+                    FF Skin Tool is an unofficial educational app and is not affiliated with
                     any bank, stock exchange or cloud service provider. The numbers shown here
                     are simple estimates for learning and entertainment only and are not
                     financial or investment advice.

@@ -12,7 +12,7 @@ const MINI_QUIZ = [
 ];
 
 export default function Index() {
-    usePageTitle("Finzoria Finance");
+    usePageTitle("FF Skin Tool");
 
     const [qIndex, setQIndex] = useState(0);
     const [selected, setSelected] = useState(null);

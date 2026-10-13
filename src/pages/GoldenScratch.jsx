@@ -30,7 +30,7 @@ function makeCells() {
 }
 
 export default function GoldenScratch() {
-    usePageTitle("Golden Scratch 🏅 | Finzoria");
+    usePageTitle("Golden Scratch 🏅 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [cells, setCells] = useState(makeCells);

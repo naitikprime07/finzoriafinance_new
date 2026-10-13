@@ -23,7 +23,7 @@ function drawCard() {
 }
 
 export default function RupeeRush() {
-    usePageTitle("Rupee Rush 💰 | Finzoria");
+    usePageTitle("Rupee Rush 💰 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [cur, setCur] = useState(drawCard);

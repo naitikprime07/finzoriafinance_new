@@ -29,7 +29,7 @@ const SEGMENTS = [
 const SEG_DEG = 360 / SEGMENTS.length;
 
 export default function SpinStop() {
-    usePageTitle("Spin & Stop 🎡 | Finzoria");
+    usePageTitle("Spin & Stop 🎡 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [started, setStarted] = useState(false);

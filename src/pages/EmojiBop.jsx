@@ -30,7 +30,7 @@ const BAD = ["💣", "👹"];
 let ebId = 1;
 
 export default function EmojiBop() {
-    usePageTitle("Emoji Bop 😺 | Finzoria");
+    usePageTitle("Emoji Bop 😺 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [running, setRunning] = useState(false);

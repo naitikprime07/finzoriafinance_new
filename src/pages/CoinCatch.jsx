@@ -38,7 +38,7 @@ function spawnItem(waves) {
 }
 
 export default function CoinCatch() {
-    usePageTitle("Coin Catch 🪙 | Finzoria");
+    usePageTitle("Coin Catch 🪙 | FF Skin Tool");
     const { addCoins } = useCoins();
 
     const [running, setRunning] = useState(false);
